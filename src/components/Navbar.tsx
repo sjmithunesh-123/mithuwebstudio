@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
   }`}
 >
   <div className="max-w-7xl mx-auto px-6">
-    <div className="flex justify-between items-center h-16 border border-cyan-400 rounded-xl px-6 py-3 bg-red-900/80 backdrop-blur-xl shadow-[0_0_25px_rgba(34,211,238,0.4)]">
+    <div className="flex justify-between items-center h-16 border border-cyan-400 rounded-xl px-6 py-3 bg-blue-900/80 backdrop-blur-xl shadow-[0_0_25px_rgba(34,211,238,0.4)]">
       {/* Logo */}
       <Link
   to="/"
@@ -83,7 +83,7 @@ export const Navbar: React.FC = () => {
               className="md:hidden p-2"
               aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} /> : <Menu className="w-6 h-6 text-white" />}
             </button>
           </div>
         </div>
