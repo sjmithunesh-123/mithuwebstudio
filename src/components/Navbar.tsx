@@ -34,8 +34,7 @@ export const Navbar: React.FC = () => {
   }`}
 >
   <div className="max-w-7xl mx-auto px-6">
-    <div className="flex justify-between items-center h-16 border border-cyan-500 rounded-xl px-6 py-3 bg-black/20 backdrop-blur-md">
-
+    <div className="flex justify-between items-center h-16 border border-cyan-400 rounded-xl px-6 py-3 bg-black/80 backdrop-blur-xl shadow-[0_0_25px_rgba(34,211,238,0.4)]">
       {/* Logo */}
       <Link
   to="/"
