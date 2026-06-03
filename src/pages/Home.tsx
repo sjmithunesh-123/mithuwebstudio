@@ -37,9 +37,14 @@ const HomePage: React.FC = () => {
   transition={{ duration: 0.8 }}
   className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
   style={{
-    backgroundImage: "url('/bg.jpg')"
+    backgroundImage:  "url('/bg.jpg')",
+    backgroundSize: "cover",
+  backgroundPosition: "80% center",
+  backgroundRepeat: "no-repeat"
+    
   }}
 >
+
         {/* Background Effects */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
@@ -67,12 +72,13 @@ const HomePage: React.FC = () => {
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0.2 }}
   className="max-w-3xl"
->
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-              <span className="gradient-text">Transform Your Business</span>
-              <br />
-              with Professional Websites
-            </h1>
+><h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 text-white">
+  <span className="gradient-text">Transform Your Business</span>
+  <br />
+  <span className="text-white drop-shadow-2xl">
+    with Professional Websites
+  </span>
+</h1>
            <p className="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl">
               We build modern, fast, SEO-friendly websites that help businesses grow online. From design to deployment, we've got you covered.
             </p>

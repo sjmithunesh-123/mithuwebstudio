@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X,  } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useDarkMode, useScrollPosition } from '../hooks/useCustomHooks';
+import { useScrollPosition } from '../hooks/useCustomHooks';
 
 
 
 export const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const { isDark, toggle } = useDarkMode();
+  const [isOpen, setIsdark] = useState(false);
+  
   const scrollPosition = useScrollPosition();
 
   const isScrolled = scrollPosition > 50;
@@ -58,7 +58,7 @@ export const Navbar: React.FC = () => {
           <Link
             key={item.path}
             to={item.path}
-            className="text-sm font-medium hover:text-primary-600 dark:hover:text-accent transition-colors"
+            className="text-sm font-medium text-white hover:text-cyan-400 transition-colors"
           >
             {item.name}
           </Link>
@@ -68,13 +68,7 @@ export const Navbar: React.FC = () => {
           {/* Right Section */}
           <div className="flex items-center gap-4">
             {/* Theme Toggle */}
-            <button
-              onClick={toggle}
-              className="p-2 rounded-lg bg-gray-100 dark:bg-secondary/50 hover:bg-gray-200 dark:hover:bg-secondary transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {isDark ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
+            
 
             {/* CTA Button */}
             <Link
@@ -86,7 +80,7 @@ export const Navbar: React.FC = () => {
 
             {/* Mobile Menu Button */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={() => setIsdark(!isOpen)}
               className="md:hidden p-2"
               aria-label="Toggle menu"
             >
@@ -107,7 +101,7 @@ export const Navbar: React.FC = () => {
                 key={item.path}
                 to={item.path}
                 className="block px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-secondary/50 transition-colors"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsdark(false)}
               >
                 {item.name}
               </Link>
@@ -115,7 +109,7 @@ export const Navbar: React.FC = () => {
             <Link
               to="/contact"
               className="block px-4 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors font-medium text-center mt-4"
-              onClick={() => setIsOpen(false)}
+              onClick={() => setIsdark(false)}
             >
               Get Started
             </Link>

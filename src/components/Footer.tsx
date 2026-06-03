@@ -28,18 +28,18 @@ export const Footer: React.FC = () => {
     {
       title: 'Contact',
       links: [
-        { name: 'Email: hello@mithuwebstudio.com', path: '#' },
-        { name: 'Phone: +91 98765 43210', path: '#' },
+        { name: 'Email: sjmithunesh@gmail.com', path: 'mailto:sjmithunesh@gmail.com' },
+        { name: 'Phone: +91 98765 43210', path: 'tel:+919876543210' },
         { name: 'Address: India', path: '#' },
       ],
     },
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: '#' },
-    { icon: Twitter, href: '#' },
-    { icon: Linkedin, href: '#' },
-    { icon: Instagram, href: '#' },
+    { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100023666435188' },
+    { icon: Twitter, href: 'https://twitter.com' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/mithunesh-s-9791b9345/' },
+    { icon: Instagram, href: 'https://www.instagram.com/__mr_mithu__28/' },
   ];
 
   return (
