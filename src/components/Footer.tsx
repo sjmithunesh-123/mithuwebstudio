@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
       title: 'Contact',
       links: [
         { name: 'Email: sjmithunesh@gmail.com', path: 'mailto:sjmithunesh@gmail.com' },
-        { name: 'Phone: +91 98765 43210', path: 'tel:+919876543210' },
+        { name: 'Phone: +91 6382100601', path: 'tel:+916382100601' },
         { name: 'Address: India', path: '#' },
       ],
     },
